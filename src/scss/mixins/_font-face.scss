@@ -1,0 +1,30 @@
+/* stylelint-disable */
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$url}.woff2') format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin interLight {
+  font-family: "interLight", sans-serif;
+}
+
+@mixin interRegular {
+  font-family: "interRegular", sans-serif;
+}
+
+@mixin interMedium {
+  font-family: "interMedium", sans-serif;
+}
+
+@mixin interSemiBold {
+  font-family: "interSemiBold", sans-serif;
+}
+
+@mixin interBold {
+  font-family: "interBold", sans-serif;
+}

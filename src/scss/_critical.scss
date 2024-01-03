@@ -1,9 +1,8 @@
-@import "core/helpers/functions";
-@import "core/helpers/variables";
-@import "core/helpers/mixins";
+@import "functions/functions";
+@import "variables";
+@import "mixins/mixins";
 
 @import "node_modules/normalize.css/normalize";
 
-@import "core/base/base";
-@import "core/base/container";
-
+@import "base/base";
+@import "base/container";

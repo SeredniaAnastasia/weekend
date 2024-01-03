@@ -1,8 +1,8 @@
-@import "core/helpers/functions";
-@import "core/helpers/variables";
-@import "core/helpers/mixins";
+@import "functions/functions";
+@import "variables";
+@import "mixins/mixins";
 
-@import "core/base/fonts";
+@import "base/fonts";
 
-@import "scaffolds/components/**/*";
-@import "scaffolds/sections/**/*";
+@import "components/**/*";
+@import "sections/**/*";

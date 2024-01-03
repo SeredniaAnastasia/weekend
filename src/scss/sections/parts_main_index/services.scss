@@ -1,0 +1,119 @@
+// @import "../../../core/helpers/variables";
+// @import "../../../mixins/slick-slider-pagination";
+
+// .services {
+
+//     .services {
+//         &_wrapper {}
+
+
+
+//         &__title {
+//             width: 100%;
+//             max-width: 768px;
+//             margin: 0 auto;
+//             margin-bottom: 40px;
+
+//             text-align: center;
+//         }
+
+//         &__slider-cards {
+//             margin: 0 -25px;
+//             // background-color: rgb(45, 92, 133);
+//             padding: 5px;
+//             padding-bottom: 40px;
+//         }
+
+//         &__slider-card {
+//             display: inline-block;
+//             width: 100%;
+//             max-width: 373px;
+//             min-height: 243px;
+//             margin-right: 40px;
+//             padding: 30px 40px;
+
+//             background-color: white;
+//             border-radius: 12px;
+//             box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);
+
+//             transition: color $transitionTime, background-color $transitionTime;
+
+//             &:hover {
+//                 background-color: $cardHoverColor;
+
+//                 &>* {
+//                     color: white;
+//                 }
+//             }
+
+//             &:focus {
+//                 background-color: $cardHoverColor;
+
+//                 &>* {
+//                     color: white;
+//                 }
+//             }
+//         }
+
+//         &__slider-card-title {
+//             min-height: 50px;
+//             margin-bottom: 30px;
+//             padding-left: 90px;
+
+//             color: $titleTextColor;
+//             font-size: $fs-30;
+//             font-family: "interSemiBold", sans-serif;
+//             text-transform: capitalize;
+
+//             background-repeat: no-repeat;
+//             background-size: contain;
+//         }
+
+//         &__slider-card-title.title-icon-1 {
+//             background-image: url("../img/ourServices/ourServis-icon1.svg");
+//         }
+
+//         &__slider-card-title.title-icon-2 {
+//             background-image: url("../img/ourServices/ourServis-icon2.svg");
+//         }
+
+//         &__slider-card-title.title-icon-3 {
+//             background-image: url("../img/ourServices/ourServis-icon3.svg");
+//         }
+
+//         &__slider-card-content {
+//             margin-bottom: 22px;
+
+//             color: $textColor;
+//             line-height: 1.8;
+//         }
+
+//         &__slider-card-link {
+//             position: relative;
+
+//             color: $cardLinkColor;
+//             font-size: $fs-22;
+//             font-family: "interMedium", sans-serif;
+//             text-transform: capitalize;
+
+//             transition: color $transitionTime;
+
+//             &:hover {
+//                 color: rgba(255, 255, 255, 0.5);
+//             }
+
+//             &:focus {
+//                 color: rgba(255, 255, 255, 0.5);
+//             }
+
+//             &:before {
+//                 position: absolute;
+//                 right: -25px;
+
+//                 content: ">";
+//             }
+//         }
+//     }
+
+//     @include slick-slider-pagination(0)
+// }

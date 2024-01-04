@@ -3,9 +3,10 @@ footer.footer
         .footer__wrapper 
             .footer__top
                 .footer__content 
-                    img.footer__logo.logo(src="./img/logo.png", alt="logo", width="80", height="72")
+                    a.footer__logo-link.logo(href="#")
+                        img.footer__logo(src="./img/logo.png", alt="logo", width="80", height="72")
                     p Top learning experiences that create more talent in the world.
-                ul.footer__lists 
+                ul.footer__lists
                     each item in jsonData.menufooter.items
                         li.footer__list
                             +menu-footer(item.title, item.links)

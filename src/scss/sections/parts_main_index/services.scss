@@ -1,119 +1,138 @@
-// @import "../../../core/helpers/variables";
-// @import "../../../mixins/slick-slider-pagination";
+@import "../../variables";
+@import "../../mixins/slick-slider-pagination.scss";
 
-// .services {
-
-//     .services {
-//         &_wrapper {}
+.main {
 
 
+    .services {
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
 
-//         &__title {
-//             width: 100%;
-//             max-width: 768px;
-//             margin: 0 auto;
-//             margin-bottom: 40px;
+        .services {
+            &_wrapper {}
 
-//             text-align: center;
-//         }
 
-//         &__slider-cards {
-//             margin: 0 -25px;
-//             // background-color: rgb(45, 92, 133);
-//             padding: 5px;
-//             padding-bottom: 40px;
-//         }
 
-//         &__slider-card {
-//             display: inline-block;
-//             width: 100%;
-//             max-width: 373px;
-//             min-height: 243px;
-//             margin-right: 40px;
-//             padding: 30px 40px;
+            &__title {
+                width: 100%;
+                max-width: 768px;
+                margin: 0 auto;
+                margin-bottom: 40px;
 
-//             background-color: white;
-//             border-radius: 12px;
-//             box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);
+                text-align: center;
+            }
 
-//             transition: color $transitionTime, background-color $transitionTime;
+            &__slider-cards {
+                margin: 0 -25px;
+                // background-color: rgb(45, 92, 133);
+                padding: 5px;
+                padding-bottom: 40px;
+            }
 
-//             &:hover {
-//                 background-color: $cardHoverColor;
+            &__slider-card {
+                display: inline-block;
+                width: 100%;
+                max-width: 373px;
+                // min-height: 243px;
+                margin-right: 40px;
+                padding: 30px 40px;
+                background-color: white;
+                border-radius: 12px;
+                box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);
+                transition: color $transitionTime, background-color $transitionTime;
 
-//                 &>* {
-//                     color: white;
-//                 }
-//             }
+                &:hover {
+                    background-color: $cardHoverColor;
 
-//             &:focus {
-//                 background-color: $cardHoverColor;
+                    &>* {
+                        color: white;
+                    }
+                }
 
-//                 &>* {
-//                     color: white;
-//                 }
-//             }
-//         }
+                &:focus {
+                    background-color: $cardHoverColor;
 
-//         &__slider-card-title {
-//             min-height: 50px;
-//             margin-bottom: 30px;
-//             padding-left: 90px;
+                    &>* {
+                        color: white;
+                    }
+                }
+            }
 
-//             color: $titleTextColor;
-//             font-size: $fs-30;
-//             font-family: "interSemiBold", sans-serif;
-//             text-transform: capitalize;
+            &__slider-card.big {
+                max-width: 429px;
+            }
 
-//             background-repeat: no-repeat;
-//             background-size: contain;
-//         }
 
-//         &__slider-card-title.title-icon-1 {
-//             background-image: url("../img/ourServices/ourServis-icon1.svg");
-//         }
 
-//         &__slider-card-title.title-icon-2 {
-//             background-image: url("../img/ourServices/ourServis-icon2.svg");
-//         }
 
-//         &__slider-card-title.title-icon-3 {
-//             background-image: url("../img/ourServices/ourServis-icon3.svg");
-//         }
 
-//         &__slider-card-content {
-//             margin-bottom: 22px;
+            &__slider-card-title {
+                min-height: 50px;
+                margin-bottom: 30px;
+                padding-left: 60px;
 
-//             color: $textColor;
-//             line-height: 1.8;
-//         }
+                color: $titleTextColor;
+                font-size: $fs-22;
+                font-family: "interSemiBold", sans-serif;
+                text-transform: capitalize;
+                position: relative;
+            }
 
-//         &__slider-card-link {
-//             position: relative;
+            &__slider-card-title::before {
+                position: absolute;
+                content: "";
+                background-repeat: no-repeat;
+                width: 48px;
+                height: 48px;
+                background-size: 48px, 48px, contain;
+                left: 0;
+            }
 
-//             color: $cardLinkColor;
-//             font-size: $fs-22;
-//             font-family: "interMedium", sans-serif;
-//             text-transform: capitalize;
+            &__slider-card-title.title-icon-1::before {
+                background-image: url("../img/ourServices/ourServis-icon1.svg");
+            }
 
-//             transition: color $transitionTime;
+            &__slider-card-title.title-icon-2::before {
+                background-image: url("../img/ourServices/ourServis-icon2.svg");
+            }
 
-//             &:hover {
-//                 color: rgba(255, 255, 255, 0.5);
-//             }
+            &__slider-card-title.title-icon-3::before {
+                background-image: url("../img/ourServices/ourServis-icon3.svg");
+            }
 
-//             &:focus {
-//                 color: rgba(255, 255, 255, 0.5);
-//             }
+            &__slider-card-content {
+                margin-bottom: 22px;
+                color: $textColor;
+                line-height: 1.8;
+            }
 
-//             &:before {
-//                 position: absolute;
-//                 right: -25px;
+            &__slider-card-link {
+                position: relative;
+                color: $cardLinkColor;
+                font-size: $fs-22;
+                font-family: "interMedium", sans-serif;
+                text-transform: capitalize;
+                transition: color $transitionTime;
 
-//                 content: ">";
-//             }
-//         }
-//     }
+                &:hover {
+                    color: rgba(255, 255, 255, 0.5);
+                }
 
-//     @include slick-slider-pagination(0)
-// }
+                &:focus {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                &:before {
+                    position: absolute;
+                    right: -25px;
+
+                    content: ">";
+                }
+            }
+        }
+
+        @include slick-slider-pagination(0)
+    }
+}

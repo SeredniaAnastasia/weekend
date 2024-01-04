@@ -88,6 +88,7 @@
     "pug-lint": "^2.7.0",
     "sass": "^1.64.1",
     "sass-loader": "^13.3.2",
+    "slick-slider": "^1.8.2",
     "style-loader": "^3.3.3",
     "stylelint": "^15.10.2",
     "stylelint-config-rational-order": "^0.1.2",

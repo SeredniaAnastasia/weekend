@@ -1,12 +1,14 @@
 @import "../../variables";
 @import "../../mixins/slick-slider-pagination.scss";
+@import "../../mixins/font-face";
+
 
 .main {
 
 
     .services {
         .container {
-            max-width: 1300px;
+            max-width: 1238px;
             margin: 0 auto;
         }
 
@@ -14,13 +16,19 @@
             &_wrapper {}
 
 
+            &__first-text {
+                text-align: center;
+                margin-bottom: 12px;
+                color: $green-dark;
+                text-transform: capitalize;
+                @include interSemiBold;
+            }
 
             &__title {
                 width: 100%;
                 max-width: 768px;
                 margin: 0 auto;
                 margin-bottom: 40px;
-
                 text-align: center;
             }
 
@@ -35,8 +43,6 @@
                 display: inline-block;
                 width: 100%;
                 max-width: 373px;
-                // min-height: 243px;
-                margin-right: 40px;
                 padding: 30px 40px;
                 background-color: white;
                 border-radius: 12px;
@@ -61,7 +67,7 @@
             }
 
             &__slider-card.big {
-                max-width: 429px;
+                max-width: 412px;
             }
 
 
@@ -133,6 +139,6 @@
             }
         }
 
-        @include slick-slider-pagination(0)
+        @include slick-slider-pagination(0, 20px)
     }
 }

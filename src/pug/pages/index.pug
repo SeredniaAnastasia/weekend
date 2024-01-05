@@ -1,16 +1,7 @@
-extends ../layouts/default.pug
-
-block variables
-  - var pageTitle = "Главная страница";
-  - var pageDesc = "";
-  // - var ogType = "website|article";
+extends ../layouts/default
 
 block content
-  main.main
-    include ../sections/parts_main_index/top-main.pug
-    include ../sections/parts_main_index/services.pug
-    include ../sections/parts_main_index/programs.pug
-    include ../sections/parts_main_index/tutors.pug
-    //- include ../sections/parts_main_index/reviews.pug
-    //- include ../sections/parts_main_index/blogs.pug
-
+  main.main 
+    include ../sections/parts_main_about/about-top.pug
+    include ../sections/parts_main_about/benefits.pug
+    include ../sections/parts_main_about/features.pug

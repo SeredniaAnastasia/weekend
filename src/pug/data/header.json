@@ -2,11 +2,11 @@
   "items": [
     {
       "nameLink": "Home",
-      "link": "#!"
+      "link": "./index.html"
     },
     {
       "nameLink": "About us",
-      "link": "#!"
+      "link": "./about.html"
     },
     {
       "nameLink": "Courses",
@@ -14,7 +14,7 @@
     },
     {
       "nameLink": "Contact us",
-      "link": "#!"
+      "link": "./contact.html"
     },
     {
       "nameLink": "FAQ's",

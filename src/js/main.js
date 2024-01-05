@@ -10,7 +10,6 @@ $('.slider-services').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  // spaceBetween: 15,
   dots: true,
   arrows: false,
   centerPadding: '10px',
@@ -40,7 +39,6 @@ $('.slider-programs').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  // spaceBetween: 15,
   dots: true,
   arrows: false,
   centerPadding: '20px',
@@ -65,34 +63,14 @@ $('.slider-programs').slick({
   ],
 })
 
-// slider programs
-$('.slider-reviews1').slick({
+// slider reviews
+$('.slider-reviews').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  // spaceBetween: 15,
   dots: true,
   arrows: false,
   centerPadding: '20px',
-  variableWidth: true,
-  // centerMode: true,
-  // fade: true,
-  responsive: [
-    {
-      breakpoint: 1130,
-      settings: {
-        slidesToShow: 2,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
 })
 
 // rating star

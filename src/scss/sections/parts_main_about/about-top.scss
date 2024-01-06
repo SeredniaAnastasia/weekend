@@ -8,6 +8,10 @@
 
     }
 
+    &__content {
+        padding-right: 60px;
+    }
+
     &__title {
         color: $green-dark;
         font-size: $fs-40;
@@ -44,8 +48,21 @@
         border-radius: 32px;
         position: relative;
         cursor: pointer;
+        outline: transparent;
+        border: 2px solid transparent;
+        transition: background-color $transitionTime;
 
-        &:hover {}
+        span {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            background-color: #63c7a9;
+        }
+
+        &:focus {
+            border-color: #141414;
+        }
 
         // &::before {
         //     position: absolute;
@@ -60,19 +77,20 @@
     }
 
     &__img {
-        justify-self: right 20px;
+        justify-self: end;
         align-self: center;
         width: 474px;
         height: 474px;
         background-color: #F2F2F2;
         border-radius: 10px 10px 0px 0px;
         position: relative;
+        margin-right: 40px;
     }
 
     &__img-top,
     &__img-bottom {
         width: 376px;
-        height: 246;
+        height: 246px;
         position: absolute;
     }
 
@@ -85,4 +103,59 @@
         left: -40px;
         top: 248px;
     }
+}
+
+@media (max-width: 1100px) {
+    .about-top {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+
+        &__img {
+            width: 100%;
+            justify-self: center;
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .about-top {
+
+        &__content {
+            padding-right: 0;
+        }
+
+        &__title {
+            font-size: $fs-26;
+        }
+
+        &__subtitle {
+            font-size: $fs-26;
+        }
+
+        &__img {
+            text-align: center;
+            height: auto;
+            padding: 20px;
+        }
+
+        &__img-top,
+        &__img-bottom {
+            position: static;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+        }
+
+        &__img-top {
+            margin-bottom: 20px;
+            // left: initial;
+            // top: initial;
+        }
+
+    }
+
 }

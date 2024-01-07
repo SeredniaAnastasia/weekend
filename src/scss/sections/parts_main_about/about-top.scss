@@ -89,7 +89,7 @@
 
     &__img-top,
     &__img-bottom {
-        width: 376px;
+        max-width: 376px;
         height: 246px;
         position: absolute;
     }
@@ -113,7 +113,7 @@
         }
 
         &__img {
-            width: 100%;
+            // width: 100%;
             justify-self: center;
             margin-right: 0;
         }
@@ -137,6 +137,8 @@
         }
 
         &__img {
+            width: 100%;
+            max-width: 474px;
             text-align: center;
             height: auto;
             padding: 20px;
@@ -152,8 +154,6 @@
 
         &__img-top {
             margin-bottom: 20px;
-            // left: initial;
-            // top: initial;
         }
 
     }

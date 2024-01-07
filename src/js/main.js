@@ -1,5 +1,6 @@
 import $ from 'jquery'
 // import Swiper from 'swiper'
+import './components/burger'
 
 import 'slick-slider'
 

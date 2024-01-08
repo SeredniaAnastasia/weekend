@@ -1,29 +1,27 @@
-@mixin slick-slider-pagination($top) {
+@mixin slick-slider-pagination($top, $spaceBlock) {
     .slick-dots li button:before {
         position: absolute;
         top: $top;
-
         width: 12px;
         height: 12px;
-
         color: transparent;
-
         background-color: $sliderDots;
         border-radius: 6px;
         opacity: 1;
-
         content: "";
-
     }
 
     .slick-dots li.slick-active button:before {
         width: 48px;
-
         background-color: $sliderDotsActive;
     }
 
     .slick-dots li.slick-active:not(:last-child) {
         padding-left: 60px;
+    }
+
+    .slick-slide {
+        margin: 0 $spaceBlock;
     }
 
 }

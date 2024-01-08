@@ -27,7 +27,7 @@ import config from '../config'
 const spriteMono = () =>
   // входящие файлы
   src(
-    filesExist(`${config.src.assets.icons.mono}/**/icon-*.svg`, {
+    filesExist(`${config.src.assets.icons.mono}/**/*.svg`, {
       exceptionMessage: 'Нет ни одного файла svg',
     }),
   )
@@ -58,7 +58,7 @@ const spriteMono = () =>
 const spriteMulti = () =>
   // входящие файлы
   src(
-    filesExist(`${config.src.assets.icons.multi}/**/icon-*.svg`, {
+    filesExist(`${config.src.assets.icons.multi}/**/*.svg`, {
       exceptionMessage: 'Нет ни одного файла svg',
     }),
   )

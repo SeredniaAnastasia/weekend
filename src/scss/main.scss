@@ -1,8 +1,10 @@
+@import "./base/reset.scss";
 @import "functions/functions";
 @import "variables";
 @import "mixins/mixins";
+@import "./settings";
 
 @import "base/fonts";
-
+@import "../../src/pug/components/**/*";
 @import "components/**/*";
 @import "sections/**/*";

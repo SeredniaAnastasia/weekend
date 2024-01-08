@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "nameLink": "Home",
+      "link": "./index.html"
+    },
+    {
+      "nameLink": "About us",
+      "link": "./about.html"
+    },
+    {
+      "nameLink": "Courses",
+      "link": "#!"
+    },
+    {
+      "nameLink": "Contact us",
+      "link": "./contact.html"
+    },
+    {
+      "nameLink": "FAQ's",
+      "link": "#!"
+    }
+  ]
+}

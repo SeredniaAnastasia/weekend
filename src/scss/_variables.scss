@@ -70,12 +70,35 @@ $fs-26: 1.625rem;
 $fs-30: 1.875rem;
 $fs-32: 2rem;
 $fs-36: 2.25rem;
+$fs-40: 2.5rem;
 $fs-48: 3rem;
+$fs-64: 4rem;
+
+
+// @media (max-width: 768px) {
+//   $fs-32: 1.3rem;
+//   $fs-36: 1.4rem;
+//   $fs-40: 1.5rem;
+//   $fs-48: 2rem;
+//   $fs-64: 2.5rem;
+// }
+
+
+
 
 
 $transitionTime: 0.3s ease-in-out;
 $container-width: 1230px;
 $container-offset: 15px;
+
+
+$green-dark: #1A906B;
+$green-light: #3FC89E;
+$black: #101828;
+$grey: #667085;
+$grey-light: #969696;
+$grey-btn: #D0D5DD;
+
 
 //- global
 $siteColor: #fff;
@@ -106,6 +129,8 @@ $tegColorRedBlue: #3538CD;
 $tegBackgroundBlue: #EEF4FF;
 $tegColorRed: #C11574;
 $tegBackgroundRed: #FDF2FA;
+$tegColorViolet: #3538CD;
+$tegBackgroundViolet: #EEF4FF;
 
 //- btn 
 $colorBtn: #3BC49A;

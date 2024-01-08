@@ -1,0 +1,154 @@
+@import "../../variables";
+@import "../../mixins/font-face";
+
+.benefits {
+
+    &__wrapper {}
+
+    &__content {
+        text-align: center;
+        // max-width: 575px;
+    }
+
+    &__title {
+        font-size: $fs-24;
+        @include interBold;
+        margin-bottom: 20px;
+        line-height: 1;
+        color: #22B286;
+    }
+
+    &__description {
+        @include interSemiBold;
+        max-width: 804px;
+        font-size: $fs-48;
+        color: #1e1e1e;
+        line-height: 1.2;
+        margin: 0 auto 20px;
+    }
+
+    p {
+        max-width: 572px;
+        margin: 0 auto 20px;
+    }
+
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 30%);
+        ;
+        row-gap: 20px;
+        column-gap: 16px;
+        counter-reset: test;
+    }
+
+    &__card {
+        max-width: 376px;
+        min-height: 236px;
+        background-color: #F7FDF9;
+        padding: 20px;
+        padding-top: 80px;
+        position: relative;
+
+        &::before {
+            color: $green-dark;
+            position: absolute;
+            counter-increment: test;
+            content: counter(test, decimal-leading-zero);
+            font-size: $fs-32;
+            line-height: normal;
+            color: #22b286;
+            background-size: 100%;
+            width: 47px;
+            height: 47px;
+            top: 20px;
+            left: 20px;
+
+            &:nth-child(2n) {
+                background-image: url("../img/header/header-case.svg");
+            }
+
+        }
+
+    }
+
+    &__card:nth-child(odd) {
+        &::before {
+            // background-image: url("../img/header/header-case.svg");
+            background-image: url("../img/about-top/ellipse-left.svg");
+
+        }
+    }
+
+    &__card:nth-child(even) {
+        &::before {
+            background-image: url("../img/about-top/ellipse-right.svg");
+        }
+    }
+
+    &__card-title {
+        @include interMedium;
+        font-size: $fs-24;
+        @include interMedium;
+        margin-bottom: 20px;
+
+    }
+
+    // &__card-content-container {
+    //     display: flex;
+    //     flex-direction: column;
+    //     max-height: 5em;
+    //     overflow: hidden;
+    // }
+
+    &__card-content {
+        // flex-grow: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__card-btn {
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // display: inline-block;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    // .features {
+    //     &__wrapper {
+    //         grid-template-columns: 1fr;
+    //         row-gap: 40px;
+    //     }
+
+    //     &__img-wrapper {
+    //         width: 100%;
+    //         justify-self: center;
+    //     }
+
+    //     &__content {
+    //         justify-self: center;
+    //         order: -1;
+    //         max-width: 575px;
+    //     }
+    // }
+
+}
+
+@media (max-width: 768px) {
+
+    // .features__description {
+    //     font-size: $fs-26;
+    // }
+
+}

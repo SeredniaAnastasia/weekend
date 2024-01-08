@@ -1,0 +1,11 @@
+.wrapper {
+    .rectangle {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 255px;
+            height: 200px;
+        }
+    }
+}

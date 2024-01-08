@@ -14,6 +14,7 @@ import { enableScroll } from './enable-scroll'
       menu.classList.contains('.menu--active') && hiddenMenu()
     }
   })
+
   burger?.addEventListener('click', () => {
     burger?.classList.toggle('burger--active')
     menu?.classList.toggle('menu--active')

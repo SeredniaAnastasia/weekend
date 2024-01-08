@@ -22,7 +22,6 @@ const rootBuild = () =>
 const fontsBuild = () =>
   src([
     `${config.src.assets.fonts}/**/*`,
-
     `${config.src.libs}/slick-carousel/fonts/*`,
   ]).pipe(dest(`${config.build.fonts}`))
 

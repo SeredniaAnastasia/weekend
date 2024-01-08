@@ -2,6 +2,7 @@
   "name": "gulp-template",
   "version": "0.1.12",
   "description": "Gulp сборка для продуктивной верстки",
+  "homepage":"https://serednii.github.io/weekend-3",
   "keywords": [
     "gulp",
     "pug",
@@ -16,7 +17,8 @@
     "preperate": "gulp prepare",
     "build": "gulp build --prod",
     "dev": "gulp watch",
-    "proxy": "gulp proxy"
+    "proxy": "gulp proxy",
+    "deploy":"gh-pages -d build"
   },
   "browserslist": [
     "last 2 version",
@@ -49,6 +51,7 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.27.5",
     "files-exist": "^1.1.0",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
     "gulp-clean": "^0.4.0",

@@ -30,7 +30,7 @@
       "links": [
         {
           "nameLink": "About us",
-          "link": "#"
+          "link": "./about.html"
         },
         {
           "nameLink": "Careers",
@@ -94,7 +94,7 @@
         },
         {
           "nameLink": "Contact",
-          "link": "#"
+          "link": "./contact.html"
         }
       ]
     }

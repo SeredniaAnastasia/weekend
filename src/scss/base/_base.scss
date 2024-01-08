@@ -52,11 +52,11 @@ img {
 // }
 
 
-.container {
-  max-width: $container-width;
-  margin: 0 auto;
-  padding: 0 $container-offset;
-}
+// .container {
+//   max-width: $container-width;
+//   margin: 0 auto;
+//   padding: 0 $container-offset;
+// }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
@@ -95,6 +95,12 @@ img {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .main {

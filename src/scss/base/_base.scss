@@ -113,40 +113,20 @@ section {
   margin-bottom: $spaceSectionBottom;
 }
 
-// @media (max-width: 650px){
+@media (max-width: 650px){
 
-//   section {
-//     margin-bottom: 40px;
-//   }
-
-//   .title {
-//     font-size: 1.75rem;
-//   }
-  
-//   .about-main,
-//   .contact-main {
-//     padding-top: 50px;
-//   }
-
-// }
-
-@media (max-width: 420px) {
-  .blogs {
-      &__items-left {
-          display: block;
-          margin-bottom: 32px;
-      }
-
-      &__item-img {
-          picture {
-              max-width: 260px;
-          }
-      }
-
-      &__item-img-big {
-          picture {
-              max-width: 260px;
-          }
-      }
+  section {
+    margin-bottom: 40px;
   }
+
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .about-main,
+  .contact-main {
+    padding-top: 50px;
+  }
+
 }
+

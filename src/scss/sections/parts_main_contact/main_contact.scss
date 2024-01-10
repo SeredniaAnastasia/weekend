@@ -2,7 +2,9 @@
     .rectangle {
         display: flex;
         justify-content: space-between;
-
+        position: relative;
+        bottom: -64px;
+        z-index: -1;
         img {
             width: 255px;
             height: 200px;

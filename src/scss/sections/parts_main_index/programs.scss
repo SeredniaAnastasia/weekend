@@ -3,12 +3,8 @@
 @import "../../mixins/font-face";
 @import "../../mixins/slick-slider-pagination";
 
-
-
-
-
 .programs {
-
+    .programs {
     &__wrapper {
         position: relative
     }
@@ -55,7 +51,7 @@
         margin-bottom: 32px;
         border-radius: 4px;
 
-        &img {
+        img {
             width: 100%;
             max-width: 336px;
             object-fit: contain;
@@ -196,8 +192,9 @@
         padding: 10px 16px;
         color: $black;
         font-size: $fs-14;
-        background-color: $grey-btn;
         border-color: transparent;
+        border: 1px solid  $grey-btn;
+        background-color: #F9FAFB;
         border-radius: 8px;
         box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
         cursor: pointer;
@@ -208,5 +205,20 @@
             background-color: $grey-light;
         }
     }
+    }
+}
 
+@media (max-width: 650px){
+.programs{
+    .programs{
+        &__subtitle {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+        &__slider-cards {
+            margin-bottom: 50px !important;
+        }
+    }
+}
+  
 }

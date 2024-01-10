@@ -13,9 +13,6 @@
         }
 
         .services {
-            &_wrapper {}
-
-
             &__first-text {
                 text-align: center;
                 margin-bottom: 12px;
@@ -70,20 +67,17 @@
                 max-width: 412px;
             }
 
-
-
-
-
             &__slider-card-title {
                 min-height: 50px;
                 margin-bottom: 30px;
                 padding-left: 60px;
-
                 color: $titleTextColor;
                 font-size: $fs-22;
                 font-family: "interSemiBold", sans-serif;
                 text-transform: capitalize;
                 position: relative;
+                display: flex;
+                align-items: center;
             }
 
             &__slider-card-title::before {
@@ -140,5 +134,24 @@
         }
 
         @include slick-slider-pagination(0, 20px)
+    }
+}
+
+
+@media (max-width: 650px){
+    .main{
+        .services{
+            .services{
+                &__title {
+                   font-size: 1.75rem;
+                }
+                
+            }
+            .slick-slide{
+                margin: 0 10px;
+            }
+
+        }
+
     }
 }

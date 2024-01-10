@@ -12,7 +12,10 @@
   height: $height;
   color: #000;
   background-color: transparent;
+  z-index: 100;
   cursor: pointer;
+
+
 
   &::before,
   &::after {

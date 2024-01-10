@@ -47,3 +47,14 @@
 
     @include slick-slider-pagination(30px, 0);
 }
+
+
+@media (max-width: 680px) {
+    .reviews{
+            padding: 35px 0;
+                &__content {
+                    font-size: 25px;
+                }
+    
+    }
+}

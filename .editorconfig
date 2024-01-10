@@ -1,6 +1,6 @@
 root = true
 
-[*]
+[.pug]
 charset = utf-8
 indent_style = space
 indent_size = 2
@@ -13,3 +13,5 @@ trim_trailing_whitespace = false
 
 [*.md]
 trim_trailing_whitespace = false
+
+exclude = dir_to_exclude/**/*.scss

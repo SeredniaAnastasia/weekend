@@ -104,12 +104,7 @@
   },
   "lint-staged": {
     "*": "editorconfig-checker --exclude '.git|.husky|node_modules|.eslintcache'",
-    "src/pug/**/*.pug": "pug-lint",
-    "src/scss/**/*.scss": "stylelint --fix",
-    "*.js": [
-      "eslint --cache --fix",
-      "prettier --write"
-    ]
+    "src/pug/**/*.pug": "pug-lint"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

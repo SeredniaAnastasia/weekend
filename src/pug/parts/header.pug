@@ -4,6 +4,8 @@ header.header
             .header__top
                 .header__logo-link 
                     +logo("./img/logo.png", 80, 72).header__logo-link
+                button.header__search-btn
+                    +icon("search")(width="20", height="20")
                 .header__search
                     +search()
                 .header__menu(data-menu)
@@ -12,12 +14,8 @@ header.header
                     button.header__account-btn Sign in 
                     button.header__account-btn Create free account
                     button.header__account-icon 
-                         +icon("sign_in")(width="24", height="24")
+                        +icon("sign_in")(width="24", height="24")
                     button.header__account-icon 
-                         +icon("create_account")(width="24", height="24")
+                        +icon("create_account")(width="24", height="24")
                     .header__account-burger.burger(data-burger)
-                        span.burger__line 
-           
-
-
-
+                        span.burger__line

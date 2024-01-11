@@ -169,7 +169,7 @@
         transition: all 0.8s; 
     }
     
-    &__search-btn.active {
+    &__search-btn.header__search-btn--active {
         transform: translateY(-40px);
     }
 
@@ -182,10 +182,9 @@
             transition: all 0.8s; 
         }
 
-        &__search.active {
+        &__search.header__search--active {
             transform: translateX(0);
         }
-    
 
     }
 }

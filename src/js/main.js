@@ -1,8 +1,10 @@
 import $ from 'jquery'
 // import Swiper from 'swiper'
 import './components/burger'
+import './components/burger-search'
 
 import 'slick-slider'
+import './map'
 
 const rater = require('rater-js')
 
@@ -159,12 +161,14 @@ function circle(d, a, element, radius, sped) {
 circle(8, 0, "myCanvas", 5, 0.003)
 circle(8, 3, "myCanvas1", 7, 0.005)
 
+// console.log('ghg55555555555555555555555h')
 
-const searchBtn = document.querySelector('.header__search-btn');
-const searchInput = document.querySelector('.header__search');
-console.log('ghgh')
-searchBtn?.addEventListener('click', function(){
-  searchInput?.classList.toggle('active')
-  this.classList.toggle('active')
-})
+// const searchBtn = document.querySelector('.header__search-btn');
+// const searchInput = document.querySelector('.header__search');
+
+
+// searchBtn?.addEventListener('click', function(){
+//   searchInput?.classList.toggle('header__search--active')
+//   this.classList.toggle('header__search-btn--active')
+// })
 

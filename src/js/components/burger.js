@@ -1,12 +1,13 @@
 import { disableScroll } from './disable-scroll'
 import { enableScroll } from './enable-scroll'
 
-(() => {
+function burger() {
   const burger = document?.querySelector('[data-burger]')
   const menu = document?.querySelector('[data-menu]')
   const menuItems = document?.querySelectorAll('[data-menu-item]')
   const overlay = document?.querySelector('[data-menu-overlay]')
   const body = document?.querySelector('body')
+  burger?.setAttribute('aria-label', 'Открыть меню')
 
   body.addEventListener('click', e => {
     if (!e.target.closest('.header__menu') && !e.target.closest('.burger')) {
@@ -47,4 +48,9 @@ import { enableScroll } from './enable-scroll'
     menu.classList.remove('menu--active')
     enableScroll()
   }
-})()
+}
+
+burger()
+
+
+

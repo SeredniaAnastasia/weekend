@@ -184,8 +184,7 @@
 
     }
 
-    @include slick-slider-pagination(30px, 12px);
-
+    
     &__bottom-button {
         display: block;
         margin: 0 auto;
@@ -200,12 +199,14 @@
         cursor: pointer;
         transition: background-color $transitionTime;
         @include interSemiBold;
-
+        
         &:hover {
             background-color: $grey-light;
         }
     }
-    }
+}
+
+@include slick-slider-pagination(30px, 12px);
 }
 
 @media (max-width: 650px){
@@ -221,4 +222,36 @@
     }
 }
   
+}
+
+
+
+@media (max-width: 420px){
+    .programs{
+
+        .slick-dots li button:before {
+            top: -20px;
+        }
+        .programs{
+            &__slider-card {
+                max-width: 320px;
+                padding: 20px;
+                min-height: 490px;
+            }
+            &__slider-card-title {
+                font-size: 1.1rem;
+            }
+            &__slider-card-content {
+                font-size: 0.8rem;
+            }
+            &__slider-card-bottom-price {
+                font-size: 1.125rem;
+            }
+            &__slider-cards {
+                margin-bottom: 20px !important;
+            }
+            
+        }
+    }
+      
 }

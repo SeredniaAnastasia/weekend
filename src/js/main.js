@@ -167,3 +167,4 @@ searchBtn?.addEventListener('click', function(){
   searchInput?.classList.toggle('active')
   this.classList.toggle('active')
 })
+

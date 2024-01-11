@@ -114,7 +114,7 @@
                     <use xlink:href="#create_account"></use>
                   </svg>
                 </button>
-                <div class="header__account-burger burger" data-burger aria-label="Відкрити меню"><span class="burger__line"></span></div>
+                <div class="header__account-burger burger" data-burger><span class="burger__line"></span></div>
               </div>
             </div>
           </div>
@@ -130,8 +130,8 @@
                   <form class="contact__form" action="#">
                     <h3 class="contact__form-title">Leave us a message</h3>
                     <input class="contact__form-input" type="text" placeholder="Name" required>
-                    <input class="contact__form-input" type="text" placeholder="Email Address">
-                    <textarea class="contact__form-textarea" placeholder="Your Message"></textarea>
+                    <input class="contact__form-input" type="text" placeholder="Email Address" required>
+                    <textarea class="contact__form-textarea" placeholder="Your Message" required></textarea>
                     <button class="contact__form-btn" type="submit">Send</button>
                   </form>
                   <div class="contact__info"> 
@@ -159,8 +159,9 @@
                           </svg>
                         </li>
                       </ul>
+                      <div class="map" id="map"></div>
+                      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8431.432036850738!2d14.4763767631154!3d48.983040180487436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47734fd20d0ae86d%3A0xe96c0a673dd43d97!2sUNI%20HOBBY%20Market%20Czech%20Budejovice!5e0!3m2!1sen!2scz!4v1704734628774!5m2!1sen!2scz" width="348" height="155" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">  </iframe>
                   </div>
                 </div>
               </div>

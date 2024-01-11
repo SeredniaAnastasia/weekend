@@ -156,6 +156,18 @@
         }
     }
 
+    .map {
+        max-width: 348px; 
+        aspect-ratio: 16 / 9;
+
+        .ymaps-2-1-79-map {
+            max-width: 348px !important;
+            aspect-ratio: 16 / 9 !important;
+        }
+    }
+
+
+
 }
 
 @media (max-width: 830px){

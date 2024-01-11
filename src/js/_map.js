@@ -1,5 +1,3 @@
-
-console.log("map")
 ymaps.ready(init);
 function init() {
 

@@ -4,7 +4,7 @@ import './components/burger'
 import './components/burger-search'
 
 import 'slick-slider'
-import './map'
+// import './map'
 
 const rater = require('rater-js')
 

@@ -32,7 +32,7 @@
                 width: 154px;
                 height: 154px;
                 top: -81px;
-                right: 23px;
+                right: -100px;
                 z-index: -1;
             }
 
@@ -43,8 +43,8 @@
                 background-size: contain;
                 width: 154px;
                 height: 154px;
-                top: 548px;
-                left: 90px;
+                top: 566px;
+                left: -35px;
                 z-index: -1;
             }
         }
@@ -179,28 +179,36 @@
             &__info {
                 margin-top: 0;
             }
+            &__info-wrapper {
+                margin-left: 0px; 
+            }
+            &__content {
+                padding: 30px;
+                
+            &::after {
+                background: none;
+            }
+
+            &::before {
+               background: none;
+            }
+            }
         }
     }
 
 
 }
 
-
-@media (max-width: 560px){
+@media (max-width: 1165px){
     .contact{
         .contact{
             &__content {
-                padding: 30px;
-                
-            &::after {
-                content: "";
-                background: none;
-            }
-
-            &::before {
-                content: "";
-               background: none;
-            }
+                &::after {
+                    right: 23px;    
+                }
+                &::before {
+                    left: 30px;
+                 }
             }
         }
     }

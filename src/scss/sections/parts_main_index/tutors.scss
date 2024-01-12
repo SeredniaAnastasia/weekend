@@ -99,12 +99,12 @@
     }
   }
 
-// @media (max-width: 550px) {
-//     .tutors{
-//         .tutors{
-//             &__cards {
-//                 gap: 15px;
-//             }
-//         }
-//     }
-// }
+@media (max-width: 550px) {
+    .tutors{
+        .tutors{
+            &__cards {
+                gap: 15px;
+            }
+        }
+    }
+}

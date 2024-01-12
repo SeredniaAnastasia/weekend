@@ -1,5 +1,5 @@
 ymaps.ready(init);
-(() {
+function init() {
 
   var map = new ymaps.Map('map', {
       center: [ 29.86293697871366,-95.2850092837251],
@@ -56,7 +56,8 @@ ymaps.ready(init);
               iconImageOffset: [-17, -48]
   });
 
+
   map.geoObjects.add(placemark);
   map.geoObjects.add(placemark1);
   map.geoObjects.add(placemark2);
-})()
+}

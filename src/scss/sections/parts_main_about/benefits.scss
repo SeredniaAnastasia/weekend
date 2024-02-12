@@ -106,17 +106,29 @@
 
     &__card-content {
         // flex-grow: 1;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        display: block;
+  display: -webkit-box;
+  max-width: 400px;
+  font-size: 20px;
+  -webkit-line-clamp: 4; /* количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+        span{
+            // // display: -webkit-box;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+        }
+
+
     }
 
     &__card-btn {
         // text-overflow: ellipsis;
         // white-space: nowrap;
         // overflow: hidden;
-        // display: inline-block;
+        display: inline-block;
         background-color: transparent;
         padding: 0;
         margin: 0;

@@ -1,8 +1,8 @@
 {
-  "name": "gulp-template",
+  "name": "weekend-3",
   "version": "0.1.12",
-  "description": "Gulp сборка для продуктивной верстки",
-  "homepage": "https://github.com/eliofery/gulp-template#readme",
+  "description": "",
+  "homepage": "https://github.com/SeredniaAnastasia/weekend-3",
   "keywords": [
     "gulp",
     "pug",
@@ -26,10 +26,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eliofery/gulp-template.git"
+    "url": "git+https://github.com/SeredniaAnastasia/weekend-3.git"
   },
   "bugs": {
-    "url": "https://github.com/eliofery/gulp-template/issues"
+    "url": "https://github.com/SeredniaAnastasia/weekend-3/issues"
   },
   "author": "Sergio Eliofery",
   "license": "ISC",

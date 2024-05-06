@@ -38,7 +38,6 @@ export const build = series(
 export const watch = series(
   build,
   server,
-
   parallel(
     spritesWatch,
     pugWatch,

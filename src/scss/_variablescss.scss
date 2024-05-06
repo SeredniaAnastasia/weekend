@@ -2,6 +2,31 @@
 $black: #222;
 $white: #fff;
 $accent: #cbcbcb;
+@import "mixins/functions";
+
+:root {
+  --color-black: #{hextorgb($black)};
+  --color-white: #{hextorgb($white)};
+  --color-accent: #{hextorgb($accent)};
+}
+
+@mixin dark-mode1 {
+  --color-black: #{hextorgb($white)};
+  --color-white: #{hextorgb($black)};
+  --color-accent: #{hextorgb($accent)};
+}
+ 
+.dark-mode {
+  @include dark-mode1;
+} 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-mode1;
+  }
+}
+
+// @link https://rolle.design/native-css-variables-vs-scss-variables
 
 $font-primary: Roboto, -apple-system, Arial, sans-serif;
 

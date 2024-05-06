@@ -1,8 +1,8 @@
 {
-  "name": "gulp-template",
+  "name": "weekend",
   "version": "0.1.12",
   "description": "Gulp сборка для продуктивной верстки",
-  "homepage": "https://github.com/eliofery/gulp-template#readme",
+  "homepage": "https://github.com/serednii/weekend",
   "keywords": [
     "gulp",
     "pug",

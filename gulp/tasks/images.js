@@ -66,6 +66,7 @@ export const imageOptim = () =>
 
 // Создание Webp изображения
 export const toWebp = () =>
+
   src(`${config.src.assets.images}/**/*.{jpg,png,jpeg}`) // для всех файлов формата jpg,png,jpeg будет создан файл webp
     .pipe(
       webp({
@@ -77,17 +78,20 @@ export const toWebp = () =>
 
 // Создание Avif изображения
 export const toAvif = () =>
-  src(`${config.src.assets.images}/**/*.{jpg,png,jpeg}`) // для всех файлов формата jpg,png,jpeg будет создан файл webp
-    .pipe(
-      avif({
-        quality: 80, // уровень оптимизации avif файла
-      }),
+{
+  console.log('toAvif')
+  return src(`${config.src.assets.images}/**/*.{jpg,png,jpeg}`) // для всех файлов формата jpg,png,jpeg будет создан файл webp
+  .pipe(
+    avif({
+      quality: 80, // уровень оптимизации avif файла
+    }),
     )
     .pipe(dest(config.build.images)) // разместит оптимизированные webp файлы
-    .pipe(browserSync.stream()) // обновление страницы в браузере
+    // .pipe(browserSync.stream()) // обновление страницы в браузере
+  }
 
 // Выполнение всех тасков
-export const imagesBuild = series(imageOptim, toWebp, toAvif)
+export const imagesBuild = series(imageOptim, toAvif, toWebp)
 
 // Слежение за изменением файлов
 export const imagesWatch = () =>

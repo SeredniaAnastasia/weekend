@@ -15,4 +15,5 @@ searchBtn?.addEventListener('click', function(){
           this.setAttribute('aria-expanded', 'false')
           this.setAttribute('aria-label', 'Відкрити поле пошуку')
         }
+
 })

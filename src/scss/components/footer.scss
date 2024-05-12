@@ -1,4 +1,3 @@
-// $footerBackground: #101828;
 
 @import "../variables";
 
@@ -63,13 +62,13 @@
 }
 
 
-@media only screen and (max-width: 570px){
-    .footer{
+@media only screen and (max-width: 570px) {
+    .footer {
         &__content {
            display: flex;
            gap: 30px;
            min-height: auto;
-           p{
+           p {
                 max-width: 320px;
            }
         }

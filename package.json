@@ -2,7 +2,9 @@
   "name": "weekend",
   "version": "0.1.12",
   "description": "Gulp сборка для продуктивной верстки",
-  "homepage": "https://github.com/serednii/weekend",
+  "homepage1": "https://github.com/serednii/weekend",
+  "homepage": "./",
+  
   "keywords": [
     "gulp",
     "pug",
@@ -26,10 +28,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eliofery/gulp-template.git"
+    "url": "git+https://github.com/serednii/weekend.git"
   },
   "bugs": {
-    "url": "https://github.com/eliofery/gulp-template/issues"
+    "url": "https://github.com/serednii/weekend/issues"
   },
   "author": "Sergio Eliofery",
   "license": "ISC",

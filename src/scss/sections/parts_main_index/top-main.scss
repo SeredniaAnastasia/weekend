@@ -7,9 +7,11 @@
     .header-EllipseGreen {
         position: absolute;
     }
+
     .header-EllipseOrang {
         position: absolute;
     }
+
     .about-card {
         position: absolute;
         padding: 3.70%;
@@ -291,7 +293,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                background-image: url('../img/header/header-ring.svg');
+                background-image: url('../img/header/progress-circle.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100%;
@@ -475,7 +477,7 @@
                 gap: 20px;
             }
 
-            
+
             &__partner-number {
                 margin-bottom: 20px;
             }
